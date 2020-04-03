@@ -1,0 +1,3 @@
+rootProject.name='Toggle Image Button'
+include ':app'
+include ':app:toggleimagebuttonmodule'
