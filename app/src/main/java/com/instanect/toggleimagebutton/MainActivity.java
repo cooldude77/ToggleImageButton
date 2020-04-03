@@ -12,14 +12,12 @@ import com.instanect.toggleimagebuttonmodule.ToggleImageButtonObject;
 
 public class MainActivity extends AppCompatActivity implements ToggleImageBeforeToggleButtonClickListener, ToggleImageAfterToggleButtonClickListener {
 
-    private ToggleImageButton toggleImageButton;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        toggleImageButton = findViewById(R.id.toggleImageButton);
+        ToggleImageButton toggleImageButton = findViewById(R.id.toggleImageButton);
         ToggleImageButtonObject toggleImageButtonObject = new ToggleImageButtonObject();
 
         toggleImageButtonObject.setResIdForStateA(R.drawable.ic_arrow_close);
